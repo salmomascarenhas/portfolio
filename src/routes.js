@@ -5,7 +5,8 @@ import Intro from './pages/Intro';
 function Routes() {
     return (
         <BrowserRouter>
-            <Route path='/' component={Intro} />
+            <Route path='/' exact component={Intro} />
+            <Route path='/portfolio' component={Intro} />
         </BrowserRouter>
     );
 }
